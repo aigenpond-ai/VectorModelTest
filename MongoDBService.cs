@@ -14,9 +14,9 @@ namespace VectorModelTest.Services
 
         public MongoDBService()
         {
-            //client = new MongoClient("mongodb+srv://devTestAdmin:1ValueWorkX2@mflix.frjnqpz.mongodb.net/test?retryWrites=true&w=majority");
-            client = new MongoClient("mongodb+srv://ReevelaDbAdmin:4Jh2ixGtsWV8GIYx@reevelaapp.7nl9jzr.mongodb.net/?retryWrites=true&w=majority");
-            db = client.GetDatabase("Reevela");
+         
+            client = new MongoClient("Mongo Connections String");
+            db = client.GetDatabase("Database Name");
       
             vpCollection = db.GetCollection<VenueProduct>("VenueProducts");
             imCollection = db.GetCollection<ImageMatch>("Matches");
